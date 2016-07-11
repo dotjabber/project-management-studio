@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <div class="ui-grid ui-grid-responsive">
+        <h:form id="footer-form">
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-10">
+                </div>
+                <div class="ui-grid-col-2">
+                    <table border="0" align="left">
+                        <tr>
+                            <td><h:outputText value="name:"/></td>
+                            <td><h:outputText value="#{projectInfoBean.name}"/></td>
+                        </tr>
+                        <tr>
+                            <td><h:outputText value="version:"/></td>
+                            <td><h:outputText value="#{projectInfoBean.version}"/></td>
+                        </tr>
+                        <tr>
+
+                            <td><h:outputText value="build:"/></td>
+                            <td><h:outputText value="#{projectInfoBean.build}"/></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </h:form>
+    </div>
+
+</ui:composition>
